@@ -1,0 +1,1918 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+/* a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none} */
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+/* hr{display:block;height:1px;border:0;border-top:1px solid #000;margin:1em 0;padding:0} */
+input,select{vertical-align:middle}
+li{list-style:none}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #d1d1d1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #d1d1d1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #d1d1d1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #d1d1d1;
+}
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img{
+  width: 100%;
+}
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  position: absolute;
+  vertical-align:bottom;
+}
+
+/* 針對mac 13 */
+
+/* ---- particles.js container ---- */
+@media screen and (min-width:1025px){
+    .menu_link{
+        font-size: 1.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .gototop{
+        position: fixed;
+        bottom: 90px; 
+        right: 20px;
+        background: rgba(255,255,255,0.8);
+        padding: 10px;
+        color: #fff;
+    }
+    .logo{
+        width: 200px;
+    }
+    .block_menu{
+        height: 65px;
+        /* position: absolute; */
+        border: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_headerView{
+        height: 700px;
+        background-image: url('../img/block_background_pic/bg_service.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    .show_product{
+        width: 500px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 34.5%;
+
+    }
+    .title_productName{
+        width:250px;
+        height:40px;
+        /* background-color: #c60; */
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 10%;
+        color: #fff;
+        font-size: 6em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+
+    .title_slogan{
+        width:450px;
+        height:40px;
+        /* background-color: #c60; */
+        padding-top:25%;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    /* .nav > li.block1{
+        display: none;
+    } */
+    .dl_code{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 80px;
+        /* background-color: #c60; */
+    }
+    .code_content{
+        padding-top: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download{
+        display: none;
+    }
+    .btn_download a:hover{
+        color: #fff;
+        text-shadow: 1px 1px 3px #fff;
+        text-decoration:none;
+    }
+    .appName{
+        display: block;
+        height: 80px;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0; 
+        z-index: 999;
+    }
+    .block_option{
+        height: 250px;
+        display: block;
+    }
+    .title_block{
+        padding-top: 8%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 5em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+     .option{
+        border: 0px;
+        background-color: transparent;
+    }
+    .option_pic{
+        width: 300px;
+        /* padding-top: 13%; */
+    }
+    .title_option{
+        padding-top: 5%;
+        color: #ff962d;
+        font-size: 3em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .content_option{
+        padding-top: 3%;
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_adv{
+        text-align: center;
+        height: 300px;
+    }
+    .pic_advantage{
+        width: 200px;
+    }
+    .adv{
+        background-color: transparent;
+        border: 0px;
+    }
+    .content_adv{
+        text-align: center;
+        color: #fff;
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    /* 2017.12.12 */
+    .star_left,
+    .star_right{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .sl{
+        width: 100px;
+        height: 5px;
+        background-color: #000;
+    }
+    .pic1{
+        height: 700px;
+        background-image: url('../img/activity_pic/show1.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .pic2{
+        height: 700px;
+        background-image: url('../img/activity_pic/show2.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .pic3{
+        height: 700px;
+        background-image: url('../img/activity_pic/show3.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .block_bestOption{
+        width:100% ;
+        height: 100%;
+        display: block;
+        background-color:#fff4d8;
+    }
+    .block_activity{
+        width: 100%;
+        height: 1000px;
+        display: block;
+        background-color:#ffefd1;
+    }
+    .title_option_best{
+        padding-top: 5%;
+        color: #294572;
+        font-size: 3em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_act{
+        width: 100%;
+        height: 700px;
+        display: block;
+        background-color:#fff4d8;
+        /* background-color: #c60; */
+    }
+    .introduce{
+        width: 100%;
+        height: 100px;
+        display: block;
+        position: absolute;
+        top: 150%;
+        background-color: rgba(0, 0, 0, 0.7)
+    }
+    .introduce_show{
+        top: 80%;
+        transition: .8s;
+        -webkit-transition: .8s;
+        -mos-transition: .8s;
+    }
+    .introduce_hide{
+        top: 150%;
+        transition: .8s;
+        -webkit-transition: .8s;
+        -mos-transition: .8s;
+    }
+    .ie_content{
+        padding-top: 40px;
+        padding-left: 10%;
+        color: #fff;
+        font-size: 2.4em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .block_store{
+        width: 100%;
+        height:2000px;
+        display: block;
+        background-color:#fff;
+    }
+    .content_store{
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+        padding-bottom: 50px;
+    }
+    .slidePic{
+        margin-top: 50px;
+        background-color: #fff;
+    }
+    .optionMap{
+        height: 400px;
+        background-color: #C90;
+    }
+    .block_security{
+        width: 100%;
+        height: 550px;
+        display: block;
+        background-image: url('../img/block_background_pic/bg_security1.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .block_security > .container > .row > .title_block{color:#fff;}
+    .content_security{
+        color: #fff;
+        font-size: 2.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_aboutus{
+        width: 100%;
+        height: 650px;
+        background-image: url('../img/block_background_pic/bg_aboutus.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    
+    .map{
+        width: 100%;
+        height: 300px;
+    }
+    .inf_phone,
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        padding-top: 15px;
+    }
+    .inf_phone a,
+    .inf_fax a,
+    .inf_mail a,
+    .inf_add a,
+    .inf_line a{
+        color: #000;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+    .block_contactus{
+        width: 100%;
+        height: 850px;
+        display: block;
+    }
+    .form_sendReq{
+
+    }
+    .req_name,
+    .req_mail,
+    .req_phone,
+    .req_select,
+    .req_msg{
+        width: 100%;
+        height: 45px;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: 1px solid #c6c6c6;
+        font-size: 1.8em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_select{
+        margin-top: 0px;
+    }
+    .req_send{
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.8em;
+        color: #fff;
+        background-color: #55768B;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_msg{
+        height: 200px;
+        resize: none;
+    }
+    .block_footer{
+        height:50px;
+        background-color: #000;
+    }
+    .copyright{
+        padding-top: 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }  
+}
+
+@media screen and (max-width: 1024px){
+    .dl_code{
+        display: none;
+    }
+    .code_content{
+        display: none;
+    }
+    .option{
+        border: 0px;
+        background-color: transparent;
+    }
+    .introduce{
+        width: 100%;
+        height: 100px;
+        display: block;
+        position: absolute;
+        top: 80%;
+        background-color: rgba(0, 0, 0, 0.7)
+    }
+    .introduce_show{
+        top: 80%;
+        transition: .8s;
+        -webkit-transition: .8s;
+        -mos-transition: .8s;
+    }
+    .introduce_hide{
+        top: 150%;
+        transition: .8s;
+        -webkit-transition: .8s;
+        -mos-transition: .8s;
+    }
+    .ie_content{
+        padding-top: 30px;
+        padding-left: 10%;
+        color: #fff;
+        font-size: 2.4em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_act{
+        width: 100%;
+        height: 500px;
+        display: block;
+        background-color:#fff4d8;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .menu_link{
+        margin-top: 10px;
+        font-size: 1.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .gototop{
+        position: fixed;
+        bottom: 20px; 
+        right: 20px;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        color: #fff;
+    }
+    .block_menu{
+        height: 80px;
+        /* position: absolute; */
+        border: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_headerView{
+        /* position: absolute;
+        padding-top: 30%; */
+        height: 700px;
+        background-image: url('../img/block_background_pic/bg_service.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    .show_product{
+        width: 500px;
+        height: 300px;
+        /* background-color: #c60; */
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        /* z-index: 10; */
+    }
+    .title_productName{
+        width:250px;
+        height:40px;
+        /* background-color: #c60; */
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 10%;
+        color: #fff;
+        font-size: 6em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .title_slogan{
+        width:450px;
+        height:40px;
+        /* background-color: #c60; */
+        padding-top:25%;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download{
+        width:200px;
+        height:55px;
+        /* margin: 0 auto;
+        margin-top: 30%; */
+        position: absolute;
+        top: 68%;
+        left: 40%;
+        z-index: 999;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: rgba(3, 99, 183, 0.5);
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download a:hover{
+        color: #fff;
+        text-shadow: 1px 1px 3px #fff;
+        text-decoration:none;
+    }
+    .appName{
+        display: block;
+        height: 80px;
+        color: #fff;
+        /* background-color: #c60; */
+        margin-top: 10px;
+    }
+    .line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0; 
+        z-index: 999;
+    }
+    .block_option{
+        height: 280px;
+        display: block;
+    }
+    .title_block{
+        padding-top: 8%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .option_pic{
+        width: 300px;
+        /* padding-top: 13%; */
+    }
+    .title_option_best{
+        padding-top: 5%;
+        color: #294572;
+        font-size: 3em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .title_option{
+        padding-top: 5%;
+        color: #ffaf05;
+        font-size: 3em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .content_option{
+        padding-top: 3%;
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_adv{
+        text-align: center;
+        height: 300px;
+    }
+    .pic_advantage{
+        padding-top: 40px;
+        width: 150px;
+    }
+    .adv{
+        background-color: transparent;
+        border: 0px;
+    }
+    .content_adv{
+        text-align: center;
+        color: #fff;
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_bestOption{
+        width:100% ;
+        height: 100%;
+        display: block;
+        background-color:#fff4d8;
+    }
+    .block_security{
+        width: 100%;
+        height: 450px;
+        background-image: url('../img/block_background_pic/bg_security1.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .block_security > .container > .row > .title_block{color:#fff;}
+    .content_security{
+        color: #fff;
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_aboutus{
+        height: 650px;
+        background-image: url('../img/block_background_pic/bg_aboutus.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .block_map{
+        
+    }
+    .block_contactInf{
+        
+    }
+    .map{
+        width: 100%;
+        height: 300px;
+    }
+    .inf_phone,
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        font-size: 1.9em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        padding-top: 15px;
+    }
+    .inf_phone a,
+    .inf_fax a,
+    .inf_mail a,
+    .inf_add a,
+    .inf_line a{
+        color: #000;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+    .block_contactus{
+        height: 750px;
+    }
+    .form_sendReq{
+
+    }
+    .req_name,
+    .req_mail,
+    .req_phone,
+    .req_select,
+    .req_msg{
+        width: 100%;
+        height: 45px;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: 1px solid #c6c6c6;
+        font-size: 1.8em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_select{
+        margin-top: 0px;
+    }
+    .req_send{
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.8em;
+        color: #fff;
+        background-color: #55768B;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_msg{
+        height: 150px;
+        resize: none;
+    }
+    .block_footer{
+        height:50px;
+        background-color: #000;
+    }
+    .copyright{
+        padding-top: 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+}
+
+@media screen and (max-width:768px){
+    .dl_code{
+        display: none;
+    }
+    .code_content{
+        display: none;
+    }
+    .option{
+        border: 0px;
+        background-color: transparent;
+    }
+    .logo{
+        width: 180px;
+        margin-top: 10px;
+    }
+    .gototop{
+        position: fixed;
+        bottom: 70px; 
+        right: 20px;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        color: #fff;
+    }
+    .block_menu{
+        height: 80px;
+        /* position: absolute; */
+        border: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .menu_link{
+        font-size: 1.3em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_headerView{
+        /* position: absolute;
+        padding-top: 30%; */
+        height: 700px;
+        background-image: url('../img/block_background_pic/bg_service.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    .show_product{
+        width: 500px;
+        height: 300px;
+        /* background-color: #c60; */
+        position: absolute;
+        top: 30%;
+        left: 17%;
+    }
+    .title_productName{
+        width:250px;
+        height:40px;
+        /* background-color: #c60; */
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 10%;
+        color: #fff;
+        font-size: 6em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .title_slogan{
+        width:450px;
+        height:40px;
+        /* background-color: #c60; */
+        padding-top:25%;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download{
+        width:200px;
+        height:55px;
+        position: absolute;
+        top: 68%;
+        left: 37%;
+        z-index: 999;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: rgba(3, 99, 183, 0.5);
+        font-size: 2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download a:hover{
+        color: #fff;
+        text-shadow: 1px 1px 3px #fff;
+        text-decoration:none;
+    }
+    .appName{
+        display: block;
+        height: 80px;
+        color: #fff;
+        /* background-color: #c60; */
+        margin-top: 10px;
+    }
+    .line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0; 
+        z-index: 999;
+    }
+    .block_option{
+        height: 250px;
+    }
+    .title_block{
+        padding-top: 8%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .option_pic{
+        padding-top: 30px;
+        width:150px;
+        /* padding-top: 13%; */
+    }
+    .block_bestOption{
+        width:100% ;
+        height: 100%;
+        display: block;
+        background-color:#fff4d8;
+    }
+    .introduce{
+        width: 100%;
+        height: 100px;
+        display: block;
+        position: absolute;
+        top: 80%;
+        background-color: rgba(0, 0, 0, 0.7)
+    }
+    .introduce_show{
+        top: 80%;
+        transition: .8s;
+        -webkit-transition: .8s;
+        -mos-transition: .8s;
+    }
+    .introduce_hide{
+        top: 150%;
+        transition: .8s;
+        -webkit-transition: .8s;
+        -mos-transition: .8s;
+    }
+    .title_option{
+        padding-top: 5%;
+        color: #ffaf05;
+        font-size: 3em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .content_option{
+        padding-top: 3%;
+        font-size: 1.6em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_adv{
+        text-align: center;
+        height: 300px;
+    }
+    .pic_advantage{
+        width: 120px;
+    }
+    .adv{
+        background-color: transparent;
+        border: 0px;
+    }
+    .content_adv{
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_security{
+        height: 350px;
+        background-image: url('../img/block_background_pic/bg_security1.jpg');
+        /* background-size: cover; */
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .content_security{
+        font-size: 1.8em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_aboutus{
+        height: 630px;
+        background-image: url('../img/block_background_pic/bg_aboutus.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .block_map{
+        height: 200px;
+    }
+    .block_contactInf{
+        padding-top: 50px;
+    }
+    .map{
+        width: 100%;
+        height: 200px;
+    }
+    .inf_phone,
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        font-size: 1.6em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        padding-top: 15px;
+    }
+    .inf_phone a,
+    .inf_fax a,
+    .inf_mail a,
+    .inf_add a,
+    .inf_line a{
+        color: #000;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+    .block_contactus{
+        height: 700px;
+    }
+    .form_sendReq{
+
+    }
+    .req_name,
+    .req_mail,
+    .req_phone,
+    .req_select,
+    .req_msg{
+        width: 100%;
+        height: 45px;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: 1px solid #c6c6c6;
+        font-size: 1.8em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_select{
+        margin-top: 0px;
+    }
+    .req_send{
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.7em;
+        color: #fff;
+        background-color: #55768B;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_msg{
+        height: 150px;
+        resize: none;
+    }
+    .block_footer{
+        height:50px;
+        background-color: #000;
+    }
+    .copyright{
+        padding-top: 15px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.1em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+}
+
+/* 5.5吋手機 */
+@media screen and (max-width:414px){
+    /* 2017.12.13 */
+    .dl_code{
+        display: none;
+    }
+    .code_content{
+        display: none;
+    }
+    .btn_menu_cellphone{
+        margin-top: 23px;
+    }
+    .topArea{
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+    }
+    .navbar{
+        z-index: 999;
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width:200px;
+        left: 25%;
+        top: 0;
+    }
+    .gototop{
+        position: fixed;
+        bottom: 70px; 
+        right: 20px;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        color: #fff;
+    }
+    .block_menu{
+        height: 80px;
+        /* position: absolute; */
+        border: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .menu_link{
+        font-size: 1.6em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_headerView{
+        /* position: absolute;
+        padding-top: 30%; */
+        height: 400px;
+        background-image: url('../img/block_background_pic/bg_service.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    .show_product{
+        width: 100%;
+        height: 300px;
+        /* background-color: #c60; */
+        position: absolute;
+        top: 30%;
+        left: 0%;
+    }
+    .title_productName{
+        width:100%;
+        height:40px;
+        /* background-color: #c60; */
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 10%;
+        color: #fff;
+        font-size: 4em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .title_slogan{
+        width:100%;
+        height:40px;
+        /* background-color: #c60; */
+        padding-top:20%;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download{
+        width:150px;
+        height:45px;
+        position: absolute;
+        top: 75%;
+        left: 32%;
+        z-index: 999;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: rgba(3, 99, 183, 0.5);
+        font-size: 1.7em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download a:hover{
+        color: #fff;
+        text-shadow: 1px 1px 3px #fff;
+        text-decoration:none;
+    }
+    .appName{
+        display: block;
+        height: 80px;
+        color: #fff;
+        /* background-color: #c60; */
+        margin-top: 7px;
+    }
+    .line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0; 
+        z-index: 999;
+    }
+    .block_option{
+        height: 300px;
+    }
+    .block_option_best{
+
+    }
+    .title_block{
+        padding-top: 8%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .option_pic{
+        width: 130px;
+        height: 80px;
+    }
+    .title_option{
+        color: #ffaf05;
+        font-size: 2.3em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .content_option{
+        /* padding-top: 20px; */
+        font-size: 1.2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .option{
+        background-color: transparent;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        /* height: 200px; */
+    }
+    .option_pic{
+        padding-top: 10px;
+    }
+    .block_act{
+        width: 100%;
+        height: 200px;
+        display: block;
+        background-color:#fff4d8;
+        /* background-color: #c60; */
+    }
+    .introduce{
+        width: 100%;
+        height: 70px;
+        display: block;
+        position: absolute;
+        top: 70%;
+        background-color: rgba(0, 0, 0, 0.7)
+    }
+    .ie_content{
+        padding-top: 10px;
+        padding-left: 10%;
+        color: #fff;
+        font-size: 1.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .adv{
+        background-color: transparent;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 30px;
+    }
+    .block_adv{
+        text-align: center;
+        height: 350px;
+    }
+    .pic_advantage{
+        width: 100px;
+        padding-top: 10px;
+    }
+    .title_option_best{
+        padding-top: 5%;
+        color: #294572;
+        font-size: 1.7em;
+        font-weight: bold;
+        font-family: Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .content_adv{
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_security{
+        height: 250px;
+        background-image: url('../img/block_background_pic/bg_security1.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .content_security{
+        font-size: 1.2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_aboutus{
+        height: 500px;
+        background-image: url('../img/block_background_pic/bg_aboutus.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .block_map{
+        height: 200px;
+    }
+    .block_contactInf{
+        padding-top: 20px;
+    }
+    .map{
+        width: 100%;
+        height: 200px;
+    }
+    .inf_phone,
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        font-size: 1.6em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        padding-top: 5px;
+    }
+    .inf_phone a,
+    .inf_fax a,
+    .inf_mail a,
+    .inf_add a,
+    .inf_line a{
+        color: #000;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+    .block_contactus{
+        height: 600px;
+    }
+    .form_sendReq{
+
+    }
+    .req_name,
+    .req_mail,
+    .req_phone,
+    .req_select,
+    .req_msg{
+        width: 100%;
+        height: 45px;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: 1px solid #c6c6c6;
+        font-size: 1.4em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_select{
+        margin-top: 0px;
+    }
+    .req_send{
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: #55768B;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_msg{
+        height: 100px;
+        resize: none;
+    }
+    .block_footer{
+        height:50px;
+        background-color: #000;
+    }
+    .copyright{
+        padding-top: 15px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.1em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+}
+/* 4.7 吋手機 */
+@media screen and (max-width:375px){
+    .dl_code{
+        display: none;
+    }
+    .code_content{
+        display: none;
+    }
+    .navbar-nav {
+        margin: 3.5px -15px;
+    }
+    .btn_menu_cellphone{
+        margin-top: 13px;
+    }
+    .topArea{
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+    }
+    .navbar{
+        z-index: 999;
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width:200px;
+        left: 25%;
+        top: 0;
+    }
+    .block_menu{
+        height: 60px;
+        /* position: absolute; */
+        border: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .menu_link{
+        font-size: 1.6em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_headerView{
+        /* position: absolute;
+        padding-top: 30%; */
+        height: 400px;
+        background-image: url('../img/block_background_pic/bg_service.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    .show_product{
+        width: 100%;
+        height: 300px;
+        /* background-color: #c60; */
+        position: absolute;
+        top: 30%;
+        left: 0%;
+    }
+    .title_productName{
+        width:100%;
+        height:40px;
+        /* background-color: #c60; */
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 10%;
+        color: #fff;
+        font-size: 4em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .title_slogan{
+        width:100%;
+        height:40px;
+        /* background-color: #c60; */
+        padding-top:20%;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download{
+        width:150px;
+        height:45px;
+        position: absolute;
+        top: 75%;
+        left: 30%;
+        z-index: 999;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: rgba(3, 99, 183, 0.5);
+        font-size: 1.7em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download a:hover{
+        color: #fff;
+        text-shadow: 1px 1px 3px #fff;
+        text-decoration:none;
+    }
+    .appName{
+        display: block;
+        height: 80px;
+        color: #fff;
+        /* background-color: #c60; */
+        margin-top: 7px;
+    }
+    .line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0; 
+        z-index: 999;
+    }
+    .block_option{
+        height: 280px;
+    }
+    .title_block{
+        padding-top: 8%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .option_pic{
+        width: 100px;
+        height: 100px;
+        /* background-color: #C60; */
+        /* padding-top: 13%; */
+    }
+    .title_option{
+        color: #ffaf05;
+        font-size: 1.4em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .title_option_best{
+        padding-top: 5%;
+        color: #294572;
+        font-size: 1.3em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .content_option{
+        padding-top: 30px;
+        font-size: 1em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_bestOption{
+        width:100% ;
+        height: 100%;
+        display: block;
+        background-color:#fff4d8;
+    }
+    .option{
+        background-color: transparent;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        /* height: 200px; */
+    }
+    .adv{
+        background-color: transparent;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 30px;
+    }
+    .block_adv{
+        text-align: center;
+        height: 350px;
+    }
+    .pic_advantage{
+        width: 100px;
+    }
+    .content_adv{
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_security{
+        height: 250px;
+        background-image: url('../img/block_background_pic/bg_security1.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .content_security{
+        font-size: 1.2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_aboutus{
+        height: 480px;
+        background-image: url('../img/block_background_pic/bg_aboutus.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .block_map{
+        height: 200px;
+    }
+    .block_contactInf{
+        padding-top: 20px;
+    }
+    .map{
+        width: 100%;
+        height: 200px;
+    }
+    .inf_phone,
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        font-size: 1.4em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        padding-top: 5px;
+    }
+    .inf_phone a,
+    .inf_fax a,
+    .inf_mail a,
+    .inf_add a,
+    .inf_line a{
+        color: #000;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+     .block_contactus{
+        height: 600px;
+    }
+    .form_sendReq{
+
+    }
+    .req_name,
+    .req_mail,
+    .req_phone,
+    .req_select,
+    .req_msg{
+        width: 100%;
+        height: 45px;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: 1px solid #c6c6c6;
+        font-size: 1.4em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_select{
+        margin-top: 0px;
+    }
+    .req_send{
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.7em;
+        color: #fff;
+        background-color: #55768B;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_msg{
+        height: 130px;
+        resize: none;
+    }
+    .block_footer{
+        height:50px;
+        background-color: #000;
+    }
+    .copyright{
+        padding-top: 15px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.1em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+}
+@media(max-width:320px){
+    .dl_code{
+        display: none;
+    }
+    .code_content{
+        display: none;
+    }
+    .btn_menu_cellphone{
+        margin-top: 13px;
+    }
+    .topArea{
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+    }
+    .navbar{
+        z-index: 999;
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width:200px;
+        left: 25%;
+        top: 0;
+    }
+    .block_menu{
+        height: 60px;
+        /* position: absolute; */
+        border: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .menu_link{
+        font-size: 1.6em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_headerView{
+        /* position: absolute;
+        padding-top: 30%; */
+        height: 400px;
+        background-image: url('../img/block_background_pic/bg_service.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    .show_product{
+        width: 100%;
+        height: 300px;
+        /* background-color: #c60; */
+        position: absolute;
+        top: 30%;
+        left: 0%;
+    }
+    .title_productName{
+        width:100%;
+        height:40px;
+        /* background-color: #c60; */
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 10%;
+        color: #fff;
+        font-size: 3.5em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .title_slogan{
+        width:100%;
+        height:40px;
+        /* background-color: #c60; */
+        padding-top:20%;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.3em;
+        font-weight: bold;
+        text-shadow: 1px 3px 5px #444;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download{
+        width:150px;
+        height:45px;
+        position: absolute;
+        top: 70%;
+        left: 27%;
+        z-index: 999;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: rgba(3, 99, 183, 0.5);
+        font-size: 1.7em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .btn_download a:hover{
+        color: #fff;
+        text-shadow: 1px 1px 3px #fff;
+        text-decoration:none;
+    }
+    .appName{
+        display: block;
+        height: 80px;
+        color: #fff;
+        /* background-color: #c60; */
+        margin-top: 7px;
+    }
+    .line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0; 
+        z-index: 999;
+    }
+    .block_option{
+        height: 280px;
+    }
+    .title_block{
+        padding-top:30px;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 1.7em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .option_pic{
+        width: 100px;
+        height: 100px;
+        /* background-color: #C60; */
+        /* padding-top: 13%; */
+    }
+    .title_option{
+        color: #ffaf05;
+        font-size: 1.7em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .title_option_best{
+        padding-top: 5%;
+        color: #294572;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: bold;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .content_option{
+        padding-top: 10px;
+        font-size: 1em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .option{
+        background-color: transparent;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        /* height: 200px; */
+    }
+    .adv{
+        background-color: transparent;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 30px;
+    }
+    .block_adv{
+        text-align: center;
+        height: 350px;
+    }
+    .pic_advantage{
+        width: 100px;
+    }
+    .content_adv{
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_security{
+        height: 250px;
+        background-image: url('../img/block_background_pic/bg_security1.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .content_security{
+        font-size: 1em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+    .block_aboutus{
+        height: 450px;
+        background-image: url('../img/block_background_pic/bg_aboutus.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .block_map{
+        height: 200px;
+    }
+    .block_contactInf{
+        padding-top: 20px;
+    }
+    .map{
+        width: 100%;
+        height: 200px;
+    }
+    .inf_phone,
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        font-size: 1.2em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .inf_fax,
+    .inf_mail,
+    .inf_add,
+    .inf_line{
+        padding-top: 5px;
+    }
+    .inf_phone a,
+    .inf_fax a,
+    .inf_mail a,
+    .inf_add a,
+    .inf_line a{
+        color: #000;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+     .block_contactus{
+        height: 600px;
+    }
+    .form_sendReq{
+
+    }
+    .req_name,
+    .req_mail,
+    .req_phone,
+    .req_select,
+    .req_msg{
+        width: 100%;
+        height: 45px;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: 1px solid #c6c6c6;
+        font-size: 1.2em;
+        text-align: center;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_select{
+        margin-top: 0px;
+    }
+    .req_send{
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.4em;
+        color: #fff;
+        background-color: #55768B;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif; 
+    }
+    .req_msg{
+        height: 120px;
+        resize: none;
+    }
+    .block_footer{
+        height:50px;
+        background-color: #000;
+    }
+    .copyright{
+        padding-top: 15px;
+        text-align: center;
+        color: #fff;
+        font-size: 1em;
+        font-family:Apple LiGothic Medium,微軟正黑體,Adobe 繁黑體 Std B,Arial, Helvetica, sans-serif;
+    }
+}
